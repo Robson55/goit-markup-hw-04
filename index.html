@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>WebStudio</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <title>WebStudio</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
       <nav class="header-nav">
         <a class="logo" href="./index.html">
-          <span class="logo-accent">Web</span>Studio</a
-        >
+          <span class="logo-accent">Web</span>Studio</a>
         <ul class="header-nav">
           <li><a class="header-nav-list" href="./index.html">Agencja </a></li>
           <li>
@@ -31,27 +31,36 @@
       <ul class="address">
         <li>
           <a class="address-mail" href="mailto:info@devstudio.com">
-            info@devstudio.com
-          </a>
+            <svg class="envelope-phone" width="16px" height="12px">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        </a>
         </li>
         <li>
-          <a class="address-tel" href="tel:+48111111111"> +48 111 111 111</a>
+          <a class="address-tel" href="tel:+48111111111">
+            <svg class="telephone-icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+48 111 111 111</a>
         </li>
       </ul>
     </div>
-    </header>
+  </header>
 
-    <section class="hero">
-      <div class="container">
+  <section class="hero">
+    <div class="container">
       <h1 class="hero-h1">EFEKTYWNE ROZWIĄZANIA <br>DLA WASZEGO ZESPOŁU</br></h1>
       <button class="hero-h1-button" type="button">Zamów usługe</button>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="container">
+  <section class="section">
+    <div class="container">
       <ul class="advantages-list">
         <li class="advanteges-list-item">
+          <svg width="70" height="70">
+            <use href="./images/icons.svg#icon-antenna-1"></use>
+          </svg>
           <h2 class="advanteges-list-item-header">Lorem Ipsum</h2>
           <p class="advanteges-list-item-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -59,6 +68,9 @@
           </p>
         </li>
         <li class="advanteges-list-item">
+          <svg width="70" height="70">
+            <use href="./images/icons.svg#icon-astronaut-1"></use>
+          </svg>
           <h2 class="advanteges-list-item-header">Lorem Ipsum</h2>
           <p class="advanteges-list-item-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -66,6 +78,9 @@
           </p>
         </li>
         <li class="advanteges-list-item">
+          <svg width="70" height="70">
+            <use href="./images/icons.svg#icon-antenna-1"></use>
+          </svg>
           <h2 class="advanteges-list-item-header">Lorem Ipsum</h2>
           <p class="advanteges-list-item-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -73,6 +88,9 @@
           </p>
         </li>
         <li class="advanteges-list-item">
+          <svg width="70" height="70">
+            <use href="./images/icons.svg#icon-antenna-1"></use>
+          </svg>
           <h2 class="advanteges-list-item-header">Lorem Ipsum</h2>
           <p class="advanteges-list-item-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -81,10 +99,10 @@
         </li>
       </ul>
     </div>
-    </section>
+  </section>
 
-    <section>
-      <div class="container">
+  <section class="section">
+    <div class="container">
       <h1 class="services-box">Czym się zajmujemy</h1>
       <ul class="services-box-list">
         <li class="services-box-item">
@@ -98,67 +116,100 @@
         </li>
       </ul>
     </div>
-    </section>
-    <div class="container">
-    <h1 class="team">Nasz zespół</h1>
-    <ul class="team-list">
-      <li class="team-list-person">
-        <img
-          src="./images/ProductDesigner.jpg"
-          alt="Product Designer"
-          width="270"
-          height="260"
-        />
-        <p class="team-list-person-name">John Doe</p>
-        <p class="team-list-person-position">Product Designer</p>
-      </li>
-      <li class="team-list-person">
-        <img
-          src="./images/FrontendDesigner.jpg"
-          alt="Frontend Designer"
-          width="270"
-          height="260"
-        />
-        <p class="team-list-person-name">John Doe</p>
-        <p class="team-list-person-position">Frontend Designer</p>
-      </li>
-      <li class="team-list-person">
-        <img
-          src="./images/Marketing.jpg"
-          alt="Marketing"
-          width="270"
-          height="260"
-        />
-        <p class="team-list-person-name">John Doe</p>
-        <p class="team-list-person-position">Marketing</p>
-      </li>
-      <li class="team-list-person">
-        <img
-          src="./images/UIDesigner.jpg"
-          alt="UI Designer"
-          width="270"
-          height="260"
-        />
-        <p class="team-list-person-name">John Doe</p>
-        <p class="team-list-person-position">UI Designer</p>
-      </li>
-    </ul>
+  </section>
+  <section class="section">
+    <div class="team-section">
+      <div class="container">
+        <h1 class="team">Nasz zespół</h1>
+        <ul class="team-list">
+          <li class="team-list-person">
+            <img src="./images/ProductDesigner.jpg" alt="Product Designer" width="270" height="260" />
+            <p class="team-list-person-name">John Doe</p>
+            <p class="team-list-person-position">Product Designer</p>
+          </li>
+          <li class="team-list-person">
+            <img src="./images/FrontendDesigner.jpg" alt="Frontend Designer" width="270" height="260" />
+            <p class="team-list-person-name">John Doe</p>
+            <p class="team-list-person-position">Frontend Designer</p>
+          </li>
+          <li class="team-list-person">
+            <img src="./images/Marketing.jpg" alt="Marketing" width="270" height="260" />
+            <p class="team-list-person-name">John Doe</p>
+            <p class="team-list-person-position">Marketing</p>
+          </li>
+          <li class="team-list-person">
+            <img src="./images/UIDesigner.jpg" alt="UI Designer" width="270" height="260" />
+            <p class="team-list-person-name">John Doe</p>
+            <p class="team-list-person-position">UI Designer</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
-    <footer class="footer">
-      <div class="container">
-        <a class="footer-logo-accent">
-      <span class="logo-accent">Web</span>Studio</a
-        >
+  <section class="section">
+    <div class="container">
+      <h2 class="our-client">Nasi klienci</h2>
+      <ul class="our-clients-list">
+        <li>
+          <a class="our-clients-icon">
+            <svg width="70px" height="70px">
+              <use href="./images/icons.svg#icon-Logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="our-clients-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-Logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="our-clients-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-Logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="our-clients-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-Logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="our-clients-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-Logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="our-clients-icon">
+            <svg width="70" height="70">
+              <use href="./images/icons.svg#icon-Logo"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="footer-logo-accent" href="./index.html">
+        <span class="logo-accent">Web</span><a class="logo-accent-studio" href="./index.html">Studio</a></a>
       <adress>
-      <p class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</p>
+        <p class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</p>
         </address>
-        <a class="address-mail" href="mailto:info@example.com"
-          >info@example.com</a
-        >
-        <a class="address-tel" href="tel:+4811111111">+48 111 111 111</a>
-      </div>
-    </footer>
-  </body>
+        <ul class="footer-address-element">
+          <li class="footer-address-mail" href="mailto:info@example.com">info@example.com</li>
+          <li class="footer-address-tel" href="tel:+4811111111">+48 111 111 111</li>
+        </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

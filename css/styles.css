@@ -153,7 +153,15 @@ h6 {
   padding-right: 10px;
 }
 
-/* HEADER */
+.envelope-phone:hover,
+.envelope-phone:active,
+.telephone-icon:hover,
+.telephone-icon:active {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+}
+
+/* END HEADER */
 
 .hero {
   background: var(--dark-color);
@@ -534,4 +542,12 @@ h6 {
   justify-content: center;
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.our-clients-icon:hover,
+.our-clients-icon:active,
+.our-clients-icon-svg:hover,
+.our-clients-icon-svg:active {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }

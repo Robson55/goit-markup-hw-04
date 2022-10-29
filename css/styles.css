@@ -1,3 +1,5 @@
+/* MAIN STYLES */
+
 :root {
   --font-weight-normal: 400;
   --font-weight-bold: 600;
@@ -46,6 +48,8 @@ h6 {
   /* padding: 0 15px; */
 }
 
+/* END MAIN STYLES */
+
 /* HEADER */
 
 .header .container {
@@ -64,7 +68,9 @@ h6 {
 .address,
 .button-list,
 .portfolio-list,
-.our-clients-list {
+.our-clients-list,
+.team-list-icons,
+.footer-address-element {
   list-style: none;
 }
 
@@ -109,13 +115,6 @@ h6 {
   margin-left: 50px;
 }
 
-.address-mail,
-.address-tel {
-  color: var(--second-color);
-  font-size: 14px;
-  font-weight: 500;
-}
-
 .address {
   margin-left: auto;
   justify-content: flex-end;
@@ -146,6 +145,14 @@ h6 {
   font-family: var(--secondary-font);
 }
 
+.envelope-phone {
+  width: 16;
+  height: 12;
+  fill: var(--second-color);
+  stroke: var(--second-color);
+  padding-right: 10px;
+}
+
 /* HEADER */
 
 .hero {
@@ -174,8 +181,6 @@ h6 {
   text-align: center;
   margin: auto;
   padding: 200px 252px 0;
-  /* margin-bottom: 280px; */
-
 }
 
 .hero-h1-button {
@@ -193,7 +198,16 @@ h6 {
   margin: 30px auto auto;
 }
 
-
+.advantages-list-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
 .advantages-list {
   list-style: none;
@@ -360,6 +374,7 @@ h6 {
 .footer {
   background-color: var(--dark-color);
   width: 100%;
+  height: 252px;
 }
 
 .footer-logo-accent {
@@ -383,11 +398,26 @@ h6 {
   margin-top: 9px;
 }
 
-.envelope-phone {
+.telephone-icon {
   width: 16;
   height: 12;
-  fill: red;
-  stroke: red;
+  fill: var(--second-color);
+  stroke: var(--second-color);
+  padding-right: 10px;
+}
+
+.address-mail,
+.address-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  fill: var(--second-color);
 }
 
 .advantages-list-item {
@@ -402,16 +432,103 @@ h6 {
   color: red;
 }
 
-.telephone-icon {
-  stroke: #2196f3;
-  fill: red
-}
-
-.envelope-phone {
-  padding-right: 10px;
+.our-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: var(--main-font);
 }
 
 .our-clients-list {
   display: flex;
-  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0 94px 0;
+}
+
+.our-clients-icon {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  cursor: pointer;
+}
+
+.our-clients-icon-svg {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.team-list-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  cursor: pointer;
+}
+
+.team-list-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-list-icon:hover,
+.team-list-icon:focus {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.our-clients-icons {
+  padding: 50px 0 0;
+}
+
+.team-list-icon-title {
+  font-style: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white-color);
+  padding-bottom: 20px;
+}
+
+.footer .container {
+  padding: 60px 15px 0 15px;
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  margin: auto;
+}
+
+.team-list-icon-box {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.footer-list-icon:hover,
+.footer-list-icon:focus {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.footer-list-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }

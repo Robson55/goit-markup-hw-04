@@ -270,6 +270,8 @@ h6 {
 .services-box-item {
   padding: 0;
   gap: 15px;
+  position: relative;
+  overflow: hidden;
 }
 
 .team-list {
